@@ -41,7 +41,7 @@
 
 ~ To save the changes we have made so far there are 3 steps: adding ListExamples.java, then committing the changes and lastly pushing it to the remote repository
 
-~ ```git add ListExamples.java```, then hit ```<enter>```. Then ```git commit -m "fixing buy"```, note the ```"fixing bug"``` is a message, then ```<enter>```. Finally, ```git push origin``` and ```<enter>```.
+~ ```git add ListExamples.java```, then hit ```<enter>```. Then ```git commit -m "fixing bug"```, note the ```"fixing bug"``` is a message, then ```<enter>```. Finally, ```git push origin``` and ```<enter>```.
 
 ~All steps are demonstrated below:
 
