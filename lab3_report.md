@@ -78,29 +78,97 @@ Source: ```man grep```
 
 ~Using this command helps you look for specified data and keep track of reoccurring patterns.
 
-~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt``` successfully.
+~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt```.
 
-~ ```grep -o 'plane' ./technical/*/*.txt``` prints out all the lines that contains the word "planes" inside directory ```technical```'s files
+~ ```grep -o 'planes' ./technical/*/*.txt``` prints out all the files that contain the word "planes" inside the directory ```technical```'s files
 
 
 ![Image](plane.png)
 
-~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt``` unsuccessfully.
+~ This is a demonstration of using ```grep -o 'planse' ./technical/*/*.txt```.
 
 ![Image](planes.png)
 
-~ grep -o 'planes' ./technical/*/*.txt prints out all the lines that contain the word "planes" inside the directory ```technical files```. But in this case, the word ```planes``` was not found anywhere resulting in an empty output.
+```~ grep -o 'planse' ./technical/*/*.txt``` prints out all the files that contain the word "planes" inside the directory ```technical files```. But in this case, the word ```planes``` was not found anywhere resulting in an empty output.
 
 
-**command 2: grep -n 'pattern' filename**
+**command 2: ```grep -n 'pattern' filename```**
 
 ~Using this command prints out the line and its number, that contains the ```'pattern'```.
 
 ~Using this command helps you find the location of the matching pattern and could be useful for dealing with bugs, by printing out the exact line number. 
 
+~ This is a demonstration of using ```grep -n 'planes' ./technical/*/*.txt``` 
+
+~ ```grep -n 'planes' ./technical/*/*.txt``` prints out all the lines that has ```planes``` and the line's number
+
 ![Image](plane1.png)
 
-~ This is a demonstration of using ```grep -n 'plane' ./technical/*/*.txt```
+~ This is a demonstration of using ```grep -n 'planse' ./technical/*/*.txt``` 
+
+![Image](planse1.png)
+
+```~ grep -n 'planse' ./technical/*/*.txt``` prints out all the lines that contain the word "planes" inside the directory ```technical files```. But in this case, the word ```planse``` was not found anywhere resulting in an empty output.
+
+**command 3: ```grep -h 'pattern' filename```**
+
+~ Using this command prints out the patterns if found in the file argument in the form ```<pattern>```
+~ Using this command helps with analyzing the pattern and reducing output clutter
+~ This is a demonstration of using ```grep -h 'planes' ./technical/*/*.txt``` 
+
+![Image](planes2.png)
+
+~```grep -h 'planes' ./technical/*/*.txt``` search for the word ```planes``` and will return and print out the file if found. 
+
+~ This is a demonstration of using ```grep -h 'planse' ./technical/*/*.txt``` 
+
+![Image](planse2.png)
+
+```~ grep -h 'planse' ./technical/*/*.txt``` prints out the files that contain the word "planes" inside the directory ```technical files```. But in this case, the word ```planse``` was not found anywhere resulting in an empty output.
+
+**command 4: ```grep -Cn 'pattern' filename```**
+
+~ Using this command print out the line that contains ```'pattern'``` and ```n``` line(s) after ```-C``` if found.
+
+~ This is a very helpful command to look for certain blocks of codes or data that are related by returning the line that contains ```pattern``` and the ```n``` line(s) after that. 
+
+~ This is a demonstration of using ```grep -n 'planse' ./technical/*/*.txt``` 
+
+![Image](planes3)
+
+~ This is a demonstration of using ```grep -Cn 'planse' ./technical/*/*.txt``` 
+
+![Image](planse3)
+
+~Because the word ```planse``` isnt found anywhere so therefore no output is available as so at the lines after that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
