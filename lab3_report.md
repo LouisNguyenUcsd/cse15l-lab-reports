@@ -94,6 +94,9 @@ Source: ```man grep```
 
 **command 2: ```grep -n 'pattern' filename```**
 
+Source: ```man grep```
+
+
 ~Using this command prints out the line and its number, that contains the ```'pattern'```.
 
 ~Using this command helps you find the location of the matching pattern and could be useful for dealing with bugs, by printing out the exact line number. 
@@ -112,6 +115,9 @@ Source: ```man grep```
 
 **command 3: ```grep -h 'pattern' filename```**
 
+Source: ```man grep```
+
+
 ~ Using this command prints out the patterns if found in the file argument in the form ```<pattern>```
 ~ Using this command helps with analyzing the pattern and reducing output clutter
 ~ This is a demonstration of using ```grep -h 'planes' ./technical/*/*.txt``` 
@@ -128,17 +134,19 @@ Source: ```man grep```
 
 **command 4: ```grep -Cn 'pattern' filename```**
 
+Source: ```geeksforgeeks```
+
 ~ Using this command print out the line that contains ```'pattern'``` and ```n``` line(s) after ```-C``` if found.
 
 ~ This is a very helpful command to look for certain blocks of codes or data that are related by returning the line that contains ```pattern``` and the ```n``` line(s) after that. 
 
 ~ This is a demonstration of using ```grep -n 'planse' ./technical/*/*.txt``` 
 
-![Image](planes3)
+![Image](planes3.png)
 
 ~ This is a demonstration of using ```grep -Cn 'planse' ./technical/*/*.txt``` 
 
-![Image](planse3)
+![Image](planse3.png)
 
 ~Because the word ```planse``` isnt found anywhere so therefore no output is available as so at the lines after that
 
