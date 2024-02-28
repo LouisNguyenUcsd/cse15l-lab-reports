@@ -1,4 +1,5 @@
-Lab report 3
+**Lab report 3**
+
 Part 1: Bugs
 Provide:
 
@@ -19,7 +20,31 @@ public void testReverseInPlace(){
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(new int[]{5, 3, 0, 4, 5 input);
   }
- ```  
+ ```
+
+Non-Failure Inducing Input      
+
+```
+@Test
+  public void testNonFailureInducing() {
+    int[] input = {5, 4, 0, 4, 5};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{5, 4, 0, 4, 5}, input);
+  }
+```
+
+Test Symptoms:
+
+![Image](symptoms1.png)
+
+
+
+
+
+
+
+
+
                       
 
 
