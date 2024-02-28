@@ -1,4 +1,4 @@
-![image](https://github.com/LouisNguyenUcsd/cse15l-lab-reports/assets/156354023/bda3c063-0cc1-4c92-8143-9a5e17db3868)**Lab Report 4**
+**Lab Report 4**
 
 **Log In: ```ieng6```**
 
@@ -26,6 +26,30 @@
 ![Image](lab4five.png)
 
 ~To access and fix the bug from the initial position of the cursor being at the bottom, I clicked ```<up><up><up><up><up><up>``` and ```<right><right><right><right><right><right><right><right><right>```. Then using ```x``` I deleted the number ```1```. Inserting ```2``` into to previous position of the removed index using ```i``` following with ```2```.
+
+![Image](lab4six.png)
+
+~To save my changes, ```esc``` was called following ```:wq``` which save file and exit the ```vim```.
+
+**Testing the changes we made**
+
+~ Running ```test.sh``` by calling ```bash tesh.sh``` then hit ```<enter>```
+
+![Image](lab4seven.png)
+
+**Saving the changes we made**
+
+~ To save the changes we have made so far there are 3 steps: adding ListExamples.java, then committing the changes and lastly pushing it to the remote repository
+
+~ ```git add ListExamples.java```, then hit ```<enter>```. Then ```git commit -m "fixing buy"```, note the ```"fixing bug"``` is a message, then ```<enter>```. Finally, ```git push origin``` and ```<enter>```.
+
+~All steps are demonstrated below:
+
+![Image](lab48.png)
+
+
+
+
 
 
 
