@@ -78,9 +78,19 @@ Source: ```man grep```
 
 ~Using this command helps you look for specified data and keep track of reoccurring patterns.
 
+~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt``` successfully.
+
+~ ```grep -o 'plane' ./technical/*/*.txt``` prints out all the lines that contains the word "planes" inside directory ```technical```'s files
+
+
 ![Image](plane.png)
 
-~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt```
+~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt``` unsuccessfully.
+
+![Image](planes.png)
+
+~ grep -o 'planes' ./technical/*/*.txt prints out all the lines that contain the word "planes" inside the directory ```technical files```. But in this case, the word ```planes``` was not found anywhere resulting in an empty output.
+
 
 **command 2: grep -n 'pattern' filename**
 
