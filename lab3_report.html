@@ -12,16 +12,17 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
-
+                      
 A failure-inducing input for the buggy program, as a JUnit test and any associated code
+
 ```
-@Test
+  @Test
   public void testFailureInducing() {
     int[] input = {27, 19, 0, 19, 21};
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(new int[]{21, 19, 0, 19, 27}, input);
   }
-   ```                   
+```                   
                       
                     
 
