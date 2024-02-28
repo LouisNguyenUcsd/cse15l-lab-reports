@@ -35,7 +35,7 @@ Non-Failure Inducing Input
 
 Test Symptoms:
 
-![Image](symptoms1.png)
+![Image](symptom1.png)
 
 
 
