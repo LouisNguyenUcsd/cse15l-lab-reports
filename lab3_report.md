@@ -70,14 +70,30 @@ static void reverseInPlace(int[] arr) {
 
 **Find 4 interesting commands**
 
+Source: ```man grep```
+
 **command 1: ```grep -o 'pattern' filename```**
 
 ~Using this command prints out the pattern if it's found in the ```<pattern>``` file argument.
+
 ~Using this command helps you look for specified data and keep track of reoccurring patterns.
 
 ![Image](plane.png)
 
-~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt
+~ This is a demonstration of using ```grep -o 'plane' ./technical/*/*.txt```
+
+**command 2: grep -n 'pattern' filename**
+
+~Using this command prints out the line and its number, that contains the ```'pattern'```.
+
+~Using this command helps you find the location of the matching pattern and could be useful for dealing with bugs, by printing out the exact line number. 
+
+![Image](plane1.png)
+
+~ This is a demonstration of using ```grep -n 'plane' ./technical/*/*.txt```
+
+
+
 
 
 
