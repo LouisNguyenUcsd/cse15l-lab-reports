@@ -1,4 +1,4 @@
-Lab report 3
+**Lab report 3**
 
 Part 1: Bugs
 
