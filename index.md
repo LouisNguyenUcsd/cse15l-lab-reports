@@ -7,11 +7,11 @@ Provide:
 A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
 
 // Changes the input array to be in reversed order
-''' 
+``` 
 static void reverseInPlace(int[] arr) {
   for (int i = 0; i < arr.length; i++) {
     arr[i] = arr[arr.length - i - 1];
   }
 }
-''' 
+```
 
