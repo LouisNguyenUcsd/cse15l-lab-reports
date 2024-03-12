@@ -33,6 +33,30 @@ this is my code for ```insert```. I'm currently using ```VS code``` with ```JUni
 
 Student1: Here are the failure-inducing input
 
+![Image](lab51.png)
+
+Student1: I have added ```expandCapacity()``` and ```length++``` to make sure that the size will change accordingly based on the input but for some reason, its still not passing.
+
+This is the ```@Test``` used for testing my ```insert()``` method
+
+```
+    /**
+     * Tests Insert method when an element is inserted at the end
+     */
+    @Test
+    public void testInsert() {
+        listWithInt.insert(0, 10);
+        listDefaultCap.insert(0, 10);
+
+        assertArrayEquals("check data", 
+        new Integer[]{10, 1, 2, 3, null, null}, listWithInt.values);
+        assertEquals("should increment size", 4, listWithInt.length);
+
+        assertArrayEquals("check data", 
+        new Integer[]{10, null, null, null, null}, listDefaultCap.values);
+        assertEquals("should increment size", 1, listDefaultCap.length);
+    }
+```
 
 
 
