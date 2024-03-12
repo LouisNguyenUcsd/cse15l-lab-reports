@@ -4,7 +4,9 @@
 –
 Ed Discussion**
 
-**Context**: student1 is working on an assignment for skill demo, the skill demo has a different failure-inducing output compared to the practice. So now student1 is seaking help from the TA.
+**Context**: I used a reference from practice skill demo 4 then wrote a new test, and break, adjusting the code to adapt to the added bug. 
+
+Student1 is working on an assignment for a graded assignment, the actual assignment has a different failure-inducing output compared to the practice. So now student1 is seeking help from the TA.
 
 **Student1:** Hi, Im working on edstem and after I ```cd buggy``` I called ```bash grade.sh```. Hoping to find the bugs within the implementation of ListExamples.java
 
