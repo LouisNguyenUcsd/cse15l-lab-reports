@@ -45,7 +45,7 @@ static List<String> merge (List<String> list1 , List<String> list2) {
 
 **Student1:** Previously, I've only worked on simple bugs such as a syntax or unbound identifier error which only requires me to review and update the code briefly.
 
-**TA**: From the provided failure-inducing input, there seems to be a new exception being thrown called ```NullPointerException```. Which can be thrown on different occasions, such as calling a method on a null object reference, Using the return value of a method that returns null without checking for null first,...May you provide the test method being used.
+**TA**: From the provided failure-inducing input, there seems to be a new exception being thrown called ```NullPointerException```. Which can be thrown on different occasions, such as calling a method on a null object reference, Using the return value of a method that returns null without checking for null first,... Could you provide the test method being used?
 
 **Student1:** Here is the ```testMergeNull()``` which has somewhat similar content as the ```testMerge()``` given in the practice skill demo.
 
@@ -59,6 +59,26 @@ public void testMergeNull() {
   List<String> merged = ListExamples.merge(strs1, strs2);
   assertEquals(merged, Arrays.asList("a", "b", "cranberry", "dragon));
 ```
+
+**TA**: It seems that the test has called for ```strs1.add(null)``` and it doesnt seems to include ```@Test(expected = NullPointerException.class)```. This means that you should alter your code so that it would throw an exception if there is a ```null``` element being added. Which should look like this.
+
+```
+/* This is only an example with random variables, make sure you use your variable when implementing it.*/
+if( a == null) {
+  throw new NullPointerException();
+}
+```
+
+and your @Test should look like this 
+
+![Image](lab553.png)
+
+**Student1**: Thank you, I've implemented the following suggestions and the new Test.
+
+![Image](lab552.png)
+
+
+
 
 Part 2: Reflection 
 
