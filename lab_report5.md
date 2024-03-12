@@ -4,7 +4,7 @@
 –
 Ed Discussion**
 
-Student1 : I'm implementing an ```insert``` method for a class called ```MyArrayList.java``` and running tests on it.
+**Student1:** I'm implementing an ```insert``` method for a class called ```MyArrayList.java``` and running tests on it.
 
 this is my code for ```insert```. I'm currently using ```VS code``` with ```JUnit``` testing.
 
@@ -31,14 +31,14 @@ this is my code for ```insert```. I'm currently using ```VS code``` with ```JUni
     }
 ```
 
-Student1: Here are the failure-inducing input
+**Student1:** Here are the failure-inducing input
 
 ![Image](lab51.png)
 
 ![Image](lab52.png)
 
 
-Student1: I have added ```expandCapacity()``` and ```length++``` to make sure that the size will change accordingly based on the input but for some reason, its still not passing.
+**Student1:** I have added ```expandCapacity()``` and ```length++``` to make sure that the size will change accordingly based on the input but for some reason, its still not passing.
 
 This are the two ```@Test``` used for testing my ```insert()``` method
 
@@ -77,11 +77,11 @@ This are the two ```@Test``` used for testing my ```insert()``` method
 
     }
 ```
-Student2: There is something off with your ```for``` or ```if``` statement(s) but I couldn't tell. I looked almost similar to mine.
+**Student2:** There is something off with your ```for``` or ```if``` statement(s) but I couldn't tell. I looked almost similar to mine.
 
-TA's: When testing and debugging a method, in this instance for example the ```insert()``` method we should look at boundary cases (testing insert at the beginning, middle, and at the end of the list. Next of, is Index Out of Bounds making sure the correct exceptions are thrown. Correct implementation for insert and the element is inserted at the correct index. It's also extremely important to check the capacity after calling ``insert()```. Lets break it down.
+**TA:** When testing and debugging a method, in this instance for example the ```insert()``` method we should look at boundary cases (testing insert at the beginning, middle, and at the end of the list. Next of, is Index Out of Bounds making sure the correct exceptions are thrown. Correct implementation for insert and the element is inserted at the correct index. It's also extremely important to check the capacity after calling ``insert()```. Lets break it down.
 
-Boundary cases: You have the correct implementation to call ```expandCapacity()``` to make sure the capacity is good incase the array list is full.
+**Boundary cases:** You have the correct implementation to call ```expandCapacity()``` to make sure the capacity is good incase the array list is full.
 
 ```
 if(length == values.length){
@@ -89,9 +89,54 @@ if(length == values.length){
         }
 ```
 
+**Index Out of Bounds:** You have the correct implementation to throw ```IndexOutOfBoundsException()``` when the invalid index is inputted
 
+```
+if(index < 0 || index > values.length){
+           throw new IndexOutOfBoundsException(); 
+}
+```
 
+**Bugg Detected**: At **length++**, by placing it inside the loop, it was executed in every iteration of the loop. As a result, the length of the list would end up being greater than the actual number of elements inserted, leading to incorrect behavior. Which leads to the two failure-inducing inputs, index out of bounds and the wrong capacity. You should try and  find a better place to put ```length++```.
 
+```
+for(index = length; index > 0; index-- ){
+            values[index] = values[index-1];
+        length++ /* Take another look at this line and try to see where it would correctly be*/
+        }
+        values[index] = element;
+```
 
+**Student1:** Thank you, I have updated the method. And the test seems to be passing, but you did mention other tests that I should include. Would you be able to help me with them too?
+
+```
+public void insert(int index, E element){
+        if(index < 0 || index > values.length){
+           throw new IndexOutOfBoundsException(); 
+        }
+        if(length == values.length){
+           expandCapacity(length+1);
+        }
+        for(index = length; index > 0; index-- ){
+            values[index] = values[index-1];
+        }
+        values[index] = element;
+        length++ /*Changes made based on the suggestion*/
+    }
+```
+Here are the outputs of the tests.
+
+![Image](lab53.png)
+
+**TA**: To test for boundary cases here is an example that you can look at, but you should implement test cases for inserting at the beginning, middle, and at the end, emptyList, ...
+
+```
+public void testInsertOutOfBounds(){
+        assertThrows(IndexOutOfBoundsException.class,()->{
+        listDefaultCap.insert(1000, 1);
+    });
+        assertEquals(0, listDefaultCap.length);
+    };
+```
 
 
