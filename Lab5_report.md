@@ -12,7 +12,7 @@ Ed Discussion**
 
 this is the failure-inducing output.
 
-![Image](lab551.png)
+![Image](lab556.png)
 
 This is the method ```merge()```
 
@@ -45,19 +45,19 @@ static List<String> merge (List<String> list1 , List<String> list2) {
 
 **Student1:** Previously, I've only worked on simple bugs such as a syntax or unbound identifier error which only requires me to review and update the code briefly.
 
-**TA**: From the provided failure-inducing input, there seems to be a new exception being thrown called ```NullPointerException```. Which can be thrown on different occasions, such as calling a method on a null object reference, Using the return value of a method that returns null without checking for null first,... Could you provide the test method being used?
+**TA**: From the provided failure-inducing input, there seems to be a new exception being thrown called ```NullPointerException```. Which can be thrown on different occasions, such as calling a method on a null object reference, Using the return value of a method that returns null without checking for null first,...
 
 **Student1:** Here is the ```testMergeNull()``` which has somewhat similar content as the ```testMerge()``` given in the practice skill demo.
 
 ```
 @Test(timeout = 100)
-public void testMergeNull() {
+  public void testMergeNull(){
   List<String> strs1 = new ArrayList<>();
   List<String> strs2 = new ArrayList<>();
-  strs1.add(null); strs1.add("b"); strs1.add("cranberry");
-  strs2.add("dragon");
-  List<String> merged = ListExamples.merge(strs1, strs2);
-  assertEquals(merged, Arrays.asList("a", "b", "cranberry", "dragon));
+  strs1.add(null);
+  strs2.add("null");
+  assertThrows(NullPointerException.class, () -> ListExamples.merge(strs1,strs2));
+  }
 ```
 
 **TA**: It seems that the test has called for ```strs1.add(null)``` and it doesnt seems to include ```@Test(expected = NullPointerException.class)```. This means that you should alter your code so that it would throw an exception if there is a ```null``` element being added. Which should look like this.
