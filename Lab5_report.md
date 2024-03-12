@@ -168,6 +168,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 Some other commands being used were ```vim``` , ```javac, java``` and ```cd, cd ..```,...
 
 **A description of what to edit to fix the bug** 
+
 **Summary**: 
 ```vim ListExamples``` were called then using the cursor, go to ```merge()``` at around line 26. Next of, use ```i``` and insert 
 
