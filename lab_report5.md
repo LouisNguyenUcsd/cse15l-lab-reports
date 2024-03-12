@@ -128,15 +128,21 @@ Here are the outputs of the tests.
 
 ![Image](lab53.png)
 
-**TA**: To test for boundary cases here is an example that you can look at, but you should implement test cases for inserting at the beginning, middle, and at the end, emptyList, ...
+**TA**: To test for boundary cases here is an example that you can look at, but you should implement test cases for inserting at the beginning, middle, and the end, emptyList, ...
 
 ```
 public void testInsertOutOfBounds(){
         assertThrows(IndexOutOfBoundsException.class,()->{
-        listDefaultCap.insert(1000, 1);
+        listDefaultCap.insert(1000, 1);    
     });
         assertEquals(0, listDefaultCap.length);
     };
 ```
+
+Part 2: Reflection 
+
+The techinical aspect of lab was very eye opening and has allowed me to make major improvements towards my coding skill. Being able to attend these labs, working with my classmates and actually run tests, de bugging and fixing bugs together made me feel like its the closest enviroment I've had so far that remsemblance an actual work place. Where people work as a team, with help of the Ta's aka profensionals. Im just very gratefull for the experience and hoping my future classes are similar in teaching style and working enviroment. 
+
+
 
 
