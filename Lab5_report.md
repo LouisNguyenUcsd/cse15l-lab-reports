@@ -6,7 +6,7 @@ Ed Discussion**
 
 **Context**: I used a reference from practice skill demo 4 then wrote a new test, and break, adjusting the code to adapt to the added bug. 
 
-Student1 is working on an assignment for a graded assignment, the actual assignment has a different failure-inducing output compared to the practice. So now student1 is seeking help from the TA.
+**Student1** is working on an assignment for a graded assignment, the actual assignment has a different failure-inducing output compared to the practice. So now student1 is seeking help from the TA.
 
 **Student1:** Hi, Im working on edstem and after I ```cd buggy``` I called ```bash grade.sh```. Hoping to find the bugs within the implementation of ListExamples.java
 
@@ -182,7 +182,7 @@ After that, ```javac``` and call ```bash test.sh```.
 
 Part 2: Reflection 
 
-The techinical aspect of lab was very eye opening and has allowed me to make major improvements towards my coding skill. Being able to attend these labs, working with my classmates and actually run tests, de bugging and fixing bugs together made me feel like its the closest enviroment I've had so far that remsemblance an actual work place. Where people work as a team, with help of the Ta's aka profensionals. Im just very gratefull for the experience and hoping my future classes are similar in teaching style and working enviroment. 
+The technical aspect of the lab was very eye-opening and has allowed me to make major improvements in my coding skills. Being able to attend these labs, work with my classmates, and actually run tests, de-bugging and fixing bugs together made me feel like it's the closest environment I've had so far that resemblance an actual workplace. Where people work as a team, with the help of the Ta's aka professionals. I'm just very grateful for the experience and hope my future classes are similar in teaching style and working environment. 
 
 
 
