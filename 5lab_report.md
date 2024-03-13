@@ -154,7 +154,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
 
 **The full command line (or lines) you ran to trigger the bug**
 
-**content of ```test.sh```**
+**content of test.sh**
 
 ```
 set -e
