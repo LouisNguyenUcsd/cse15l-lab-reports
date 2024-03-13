@@ -83,9 +83,7 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab555.png)
 
-**The contents of each file before fixing the bug**: 
-
-**Before** 
+**The contents of each file BEFORE fixing the bug**:  
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
@@ -113,7 +111,7 @@ static List<String> merge (List<String> list1 , List<String> list2) {
 }
 ```
 
-**After:** 
+**After:** With added if statement throwing NullPointerException.
 
 ```
 static List<String> merge(List<String> list1, List<String> list2) {
