@@ -89,7 +89,9 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 **The contents of each file before fixing the bug**: 
 
 
-**Before** ```ListExamples.java``` 
+**Before** 
+
+```ListExamples.java``` 
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
@@ -115,7 +117,6 @@ static List<String> merge (List<String> list1 , List<String> list2) {
   }
   return result;
 }
-
 ```
 
 **After:** 
@@ -147,8 +148,6 @@ static List<String> merge(List<String> list1, List<String> list2) {
     }
     return result;
   }
-
-
 }
 ```
 
@@ -162,7 +161,6 @@ set -e
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
-
 ```
 
 Some other commands being used were ```vim``` , ```javac, java``` and ```cd, cd ..```,...
