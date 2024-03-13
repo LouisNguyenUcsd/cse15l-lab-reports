@@ -77,7 +77,7 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab552.png)
 
-**The file & directory structure needed:** The only 2 files that were edited ```TestListExamples.java``` and ```List Examples.java```
+**The file & directory structure needed:** The only 2 files that were edited ```TestListExamples.java``` and ```ListExamples.java```
 
 ![Image](lab554.png)
 
