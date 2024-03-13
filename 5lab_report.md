@@ -85,7 +85,7 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 **The contents of each file BEFORE fixing the bug**:
 
-** merge()**
+**merge()**
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
