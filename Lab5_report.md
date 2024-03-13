@@ -86,6 +86,36 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab555.png)
 
+**The contents of each file before fixing the bug**: ```ListExamples.java``` 
+
+```
+static List<String> merge (List<String> list1 , List<String> list2) {
+  List<String> result = new ArrayList<>();
+  int index1 = 0, index2 = 0;
+  while(index1 < list1.size() && index 2  < list2.size()){
+    if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+      result.add(list1.get(index1));
+      index1 +=1;
+    }
+    else {
+      result.add(list2.get(index2));
+      index1 +=1;
+    }
+  }
+  while(index1 < list1.size()) {
+    result.add(list1.get(index1));
+    index1 += 1
+  }
+  while(index1 < list1.size()) {
+    result.add(list1.get(index1));
+    index1 += 1
+  }
+  return result;
+}
+```
+
+
+
 
 Part 2: Reflection 
 
