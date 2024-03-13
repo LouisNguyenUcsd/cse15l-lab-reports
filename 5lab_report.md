@@ -83,7 +83,9 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab555.png)
 
-**The contents of each file BEFORE fixing the bug**:  
+**The contents of each file BEFORE fixing the bug**:
+
+** merge()**
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
@@ -143,7 +145,11 @@ static List<String> merge(List<String> list1, List<String> list2) {
 }
 ```
 
-**The full command line (or lines) you ran to trigger the bug**
+**The full command line (or lines) you ran to trigger the bug** 
+
+Steps and other helpful commands are included later down.
+
+![Image](lab556.png)
 
 **content of test.sh**
 
