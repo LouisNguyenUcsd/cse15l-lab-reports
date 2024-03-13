@@ -81,9 +81,6 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab554.png)
 
-
-```TestListExamples.java```
-
 ![Image](lab555.png)
 
 **The contents of each file before fixing the bug**: 
