@@ -86,7 +86,7 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 ![Image](lab555.png)
 
-**The contents of each file before fixing the bug**: ```ListExamples.java``` 
+**The contents of each file before fixing the bug: ListExamples.java**
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
