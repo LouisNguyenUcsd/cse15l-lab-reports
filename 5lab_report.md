@@ -88,10 +88,9 @@ Then call ```bash test.sh``` again, Run the following tests and let me know if t
 
 **The contents of each file before fixing the bug**: 
 
+```ListExamples.java``` 
 
 **Before** 
-
-```ListExamples.java``` 
 
 ```
 static List<String> merge (List<String> list1 , List<String> list2) {
